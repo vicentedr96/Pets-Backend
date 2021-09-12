@@ -31,12 +31,16 @@ C:\ ... \Pets-Backend\src\Settings en la carpeta Setting encontraras un archivo 
 en ella habrá variables de entorno, cambia las variables de entorno que tenga el nombre "LOCAL" con la información que obtuviste  en el paso anterior, modifica dentro de las comillas simples 
 (ejemplo, process.env.DATABASE_HOST_LOCAL= process.env.DATABASE_HOST_LOCAL||'Modifica aquí')
 
-1.- DIALECT = depediento de la base de datos puedes poner 'mysql' o 'postgres'
-2.- DATABASE_NAME_LOCAL  = nombre de base de datos
-3.- DATABASE_USERNAME_LOCAL = usuario de base de datos
-4.- DATABASE_PASSWORD_LOCAL = contraseña de base de datos
-5.- DATABASE_HOST_LOCAL = host
-6.- DATABASE_PORT_LOCAL = puerto
+    * DIALECT = depediento de la base de datos puedes poner 'mysql' o 'postgres'
+    * DATABASE_NAME_LOCAL  = nombre de base de datos
+    * DATABASE_USERNAME_LOCAL = usuario de base de datos
+    * DATABASE_PASSWORD_LOCAL = contraseña de base de datos
+    * DATABASE_HOST_LOCAL = host
+    * DATABASE_PORT_LOCAL = puerto
+    * (No confundas las variables que tengan la palabra "NUBE", deben ser las que contenga la palabra "LOCAL" y recuerda colocar dialect)
 
-(No confundas las variables que tengan la palabra "NUBE", deben ser las que contenga la palabra "LOCAL" y recuerda colocar dialect)
+* Ahora dentro de cmd o powershell y diríjase a la ruta de proyecto, y ejecute el comando
+"npm run desarrollo" (sin comillas), este comando levantara el servidor, base de datos y en caso de no tener la tabla requerida esta la creara automáticamente. Una vez ya creada la tabla, puedes usar las peticiones (en este enlace te dará la información de las peticiones, https://documenter.getpostman.com/view/9401113/U16kr5aq) mantén el servidor levantado mientras hagas las peticiones en tu postman
 
+* Para las pruebas de integración y de cobertura, diríjase a la ruta de proyecto, y ejecute el comando 
+"npm run test" (sin comillas)
