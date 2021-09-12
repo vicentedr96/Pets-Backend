@@ -2,7 +2,7 @@ import { DataTypes } from 'sequelize';
 import Database from '../DataBase/index';
 const Pet =  Database.getInstace().cnn.define('Pet', {
   id: {
-    type: DataTypes.INTEGER.UNSIGNED,
+    type: DataTypes.INTEGER,
     allowNull: false,
     unique: true,
     primaryKey: true,

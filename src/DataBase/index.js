@@ -1,5 +1,6 @@
 import Sequelize from 'sequelize';
 import Color from 'colors/safe';
+import Variables from '../Settings'; //ACCESO PARA EL TEST
 
 export default class Database {
 
@@ -12,10 +13,11 @@ export default class Database {
             if (process.env.NODE_ENV != "test") {
                 console.log(Color.bgBlue('🟡 Development '));
             }
-            this.cnn = new Sequelize("pets", "root", "root", {
-                host: "localhost",
-                dialect: "mysql",
-                port: "3306",
+            this.cnn = new Sequelize(process.env.DATABASE_NAME_LOCAL, 
+                process.env.DATABASE_USERNAME_LOCAL, process.env.DATABASE_PASSWORD_LOCAL, {
+                host: process.env.DATABASE_HOST_LOCAL,
+                dialect: process.env.DIALECT,
+                port: process.env.DATABASE_PORT_LOCAL,
                 define: {
                     timestamps: false,
                     charset: "utf8",
