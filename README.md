@@ -1,9 +1,8 @@
 # Pets-Backend
  
-Installation
+instalación local
 ------------
 
-* [Install Symfony][4] with Composer (see [requirements details][3]).
-* Symfony follows the [semantic versioning][5] strictly, publishes "Long Term
-  Support" (LTS) versions and has a [release process][6] that is predictable and
-  business-friendly.
+* Instala Node.js la versión lts (https://nodejs.org/es/)
+* Instala Postman (https://www.postman.com/downloads/)
+* Instalar Mysql con algun gestor de datos (https://www.mysql.com/downloads/) 
