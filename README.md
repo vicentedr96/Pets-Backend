@@ -53,4 +53,4 @@ en ella habrá variables de entorno, cambia las variables de entorno que tenga e
 ¡PRUEBALO RAPIDO!
 ------------
 
-* En caso de que quieras probarlo lo más rápido posible la api, ya se encuentra en la nube (https://github.com/vicentedr96/Pets-Backend)
+* En caso de que quieras probarlo lo más rápido posible la api, ya se encuentra en la nube (https://documenter.getpostman.com/view/9401113/U16kr5aq)
