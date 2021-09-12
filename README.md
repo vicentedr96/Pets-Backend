@@ -19,17 +19,17 @@ Instrucciónes
 * Una vez descargado el proyecto, abra su consola cmd o powershell y diríjase a la ruta de proyecto(ejemplo, C:\Users\Vicente\Documents\Github\Pets\Pets-Backend) y coloque el comando "npm i" (sin comillas), esto instalara todos los paquetes necesarios al proyecto
 
 * Después le recomendamos crear una nueva base de datos, ya sea mysql o postgres; obtenga los datos conexión estos son:
-1.- Nombre de base de datos (ejemplo, pets)
-2.- Usuario de base de datos (ejemplo, root)
-3.- Contraseña  de base de datos (ejemplo, root)
-4.- Host   (ejemplo, localhost)
-5.- Puerto (ejemplo, 300, 3001, etc)
-(No es necesario crear las tablas, el proyecto se encargara de ello, unicamente crear la base de datos)
+        * Nombre de base de datos (ejemplo, pets)
+        * Usuario de base de datos (ejemplo, root)
+        * Contraseña  de base de datos (ejemplo, root)
+        * Host   (ejemplo, localhost)
+        * Puerto (ejemplo, 300, 3001, etc)
+        * (No es necesario crear las tablas, el proyecto se encargara de ello, unicamente crear la base de datos)
 
 * Una vez teniendo la información anterior, localiza la carpeta siguiente 
 C:\ ... \Pets-Backend\src\Settings en la carpeta Setting encontraras un archivo index.js, 
 en ella habrá variables de entorno, cambia las variables de entorno que tenga el nombre "LOCAL" con la información que obtuviste  en el paso anterior, modifica dentro de las comillas simples 
-(ejemplo, process.env.DATABASE_HOST_LOCAL= process.env.DATABASE_HOST_LOCAL||'Modifica aquí')
+(ejemplo, ```javascript process.env.DATABASE_HOST_LOCAL= process.env.DATABASE_HOST_LOCAL||'Modifica aquí' ```)
 
     * DIALECT = depediento de la base de datos puedes poner 'mysql' o 'postgres'
     * DATABASE_NAME_LOCAL  = nombre de base de datos
@@ -44,3 +44,11 @@ en ella habrá variables de entorno, cambia las variables de entorno que tenga e
 
 * Para las pruebas de integración y de cobertura, diríjase a la ruta de proyecto, y ejecute el comando 
 "npm run test" (sin comillas)
+
+Markup : ![picture alt](https://res.cloudinary.com/hstxgfp2z/image/upload/v1631466304/test_phscz9.png)
+
+
+¡PRUEBALO RAPIDO!
+------------
+
+* En caso de que quieras probarlo lo más rápido posible la api, ya se encuentra en la nube (https://github.com/vicentedr96/Pets-Backend)
