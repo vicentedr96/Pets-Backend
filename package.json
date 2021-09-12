@@ -1,0 +1,37 @@
+{
+  "name": "pets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/vicentedr96/Pets-Backend",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "npm run build & node build/index.js ",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles --coverage",
+    "dev": "nodemon src/index.js",
+    "desarrollo": "nodemon --exec node_modules/.bin/babel-node ./src/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "jest": "^27.1.1",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.6"
+  },
+  "author": "Vicente delgado",
+  "license": "ISC"
+}
