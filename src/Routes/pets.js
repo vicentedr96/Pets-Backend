@@ -1,6 +1,6 @@
 import express from "express";
 import servicios from "../Mvc/View/pet";
-import Validacion from "../Utils/helpers/Validation";
+import Validacion from "../Utils/Helpers/Validation";
 
 const router = express.Router();
 let Validar = new Validacion();
