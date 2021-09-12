@@ -39,13 +39,15 @@ en ella habrá variables de entorno, cambia las variables de entorno que tenga e
     * DATABASE_PORT_LOCAL = puerto
     * (No confundas las variables que tengan la palabra "NUBE", deben ser las que contenga la palabra "LOCAL" y recuerda colocar dialect)
 
+![picture alt](https://res.cloudinary.com/hstxgfp2z/image/upload/v1631466303/variables_glnht8.png)
+
 * Ahora dentro de cmd o powershell y diríjase a la ruta de proyecto, y ejecute el comando
 "npm run desarrollo" (sin comillas), este comando levantara el servidor, base de datos y en caso de no tener la tabla requerida esta la creara automáticamente. Una vez ya creada la tabla, puedes usar las peticiones (en este enlace te dará la información de las peticiones, https://documenter.getpostman.com/view/9401113/U16kr5aq) mantén el servidor levantado mientras hagas las peticiones en tu postman
 
 * Para las pruebas de integración y de cobertura, diríjase a la ruta de proyecto, y ejecute el comando 
 "npm run test" (sin comillas)
 
-Markup : ![picture alt](https://res.cloudinary.com/hstxgfp2z/image/upload/v1631466304/test_phscz9.png)
+![picture alt](https://res.cloudinary.com/hstxgfp2z/image/upload/v1631466304/test_phscz9.png)
 
 
 ¡PRUEBALO RAPIDO!
